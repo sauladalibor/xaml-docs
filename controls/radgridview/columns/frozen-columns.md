@@ -10,7 +10,7 @@ position: 10
 
 # Frozen Columns
 
-__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column the user has to drag the frozen columns separator.
+__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column, the user has to drag the frozen columns separator.
 
 ![Rad Grid View Frozencolumns 1](images/RadGridView_Frozencolumns_1.png)
 
@@ -26,7 +26,7 @@ A frozen column always stays on top of horizontal scrolling.
 
 ## Freezing Columns
 
-You can freeze your columns programmatic using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
+You can freeze columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
 
 In this sample, the first two columns are frozen starting from left to right.
 
