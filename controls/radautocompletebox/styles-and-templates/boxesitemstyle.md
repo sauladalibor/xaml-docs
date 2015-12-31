@@ -14,9 +14,9 @@ The BoxesItemStyle property, introduced with the Q1 2016 release version of UI f
 
 ## Applying BoxesItemStyle
 
-First, you need to create __RadAutoCompleteBox__ with an ItemsSource bound to a collection of business object:
+First, you need to create __RadAutoCompleteBox__ with an ItemsSource bound to a collection of business objects:
 
->Check {% if site.site_name == 'WPF' %}[this](http://docs.telerik.com/devtools/wpf/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](http://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %} article for some more detailed information how to bind the __ItemsSource__ to a collection of business objects.
+>Check {% if site.site_name == 'WPF' %}[this](http://docs.telerik.com/devtools/wpf/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](http://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %} article for some more detailed information about how to bind the __ItemsSource__ to a collection of business objects.
 
 #### __[XAML] RadAutoCompleteBox declaration__
 
