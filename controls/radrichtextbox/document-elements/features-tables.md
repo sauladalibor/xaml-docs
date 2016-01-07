@@ -28,13 +28,13 @@ The __RadRichTextBox__ is capable of displaying and editing tables. You can use 
 	* [Formatting a Table](#formatting-a-table)
 
 ## Using RadRichTextBox's API
-
+<<comment: I suggest not using 's in SEO words in headlines. Reword as Using the RadRichTextBox API because that is more likely to be a search term.>>
 ### Creating a Table Programmatically
 
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
+The __RadRichTextBox__ exposes a rich API that allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
 
 #### __[C#] Example 1: Create a Table in Code-Behind__
 
@@ -154,7 +154,7 @@ __Figure 1__ shows the result of the code in __Example 1__.
 	Dim table As Table = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of Table)().First()
 {{endregion}}
 
-__RadRichTextBox__ exposes the following methods that regard the creation or deletion of a table:
+__RadRichTextBox__ exposes the following methods that are used to create or delete a table:
 
 
 * __DeleteTable__: Deletes the currently selected table.
@@ -166,9 +166,9 @@ __RadRichTextBox__ exposes the following methods that regard the creation or del
 * __DeleteTableRow__: Deletes the currently selected row.
             
 
-* __InsertTable__: Inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a Paragraph should be inserted before the table.            
+* __InsertTable__: Inserts a table. Allows you to specify the number of rows and columns. Has an overload that allows you to specify if a paragraph should be inserted before the table.            
         
->important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
+>important In versions earlier than Q1 2015, a paragraph is inserted before and after each Table element. When the table is inserted via the UI or the InsertTable() method, this is done automatically, otherwise paragraphs should be inserted manually. In Q1 2015 and later versions, the paragraph before the table is not mandatory.
 
 * __InsertTableColumn__: Inserts a column at the end of the table.
             
@@ -194,7 +194,7 @@ __RadRichTextBox__ exposes the following methods that regard the creation or del
 >tipTo learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
         
 
-__RadRichTextBox__ exposes a API allowing you to use various methods to add, modify or delete elements from [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. __RadRichTextBox__ exposes the following methods in regard to modifying of a table:
+__RadRichTextBox__ exposes an API that allows you to use various methods to add, modify or delete elements from [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. __RadRichTextBox__ exposes the following methods that let you modify a table:
         
 
 * __ChangeTableBorders__: Modifies the borders of the currently selected table via a [__TableBorders__]{% if site.site_name == 'Silverlight' %}(http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%} object.
@@ -298,19 +298,19 @@ __RadRichTextBox__ exposes a API allowing you to use various methods to add, mod
             
 * __UnmergeTableCells__: Splits the currently selected table cell if it has been merged.
 
-* __ChangeTableRowRepeatOnEveryPage__: Changes whether the row is repeated header row and applies the row’s style if necessary. More information about this functionality is available [here]({%slug radrichtextbox-features-repeat-table-header-row%}).
+* __ChangeTableRowRepeatOnEveryPage__: Changes whether the row is a repeated header row and applies the row’s style if necessary. More information about this functionality is available [here]({%slug radrichtextbox-features-repeat-table-header-row%}).
  
 ## Using the Built-in UI
 
 
 ### Creating a Table
 
-You can enable the user to create a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click. To learn more about how to use the __RadRichTextBoxRibbonUI__ read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+You can enable the user to create a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click. To learn more about how to use the __RadRichTextBoxRibbonUI__, read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
 ![Rad Rich Text Box Features Layout Elements Tables 02](images/RadRichTextBox_Features_LayoutElements_Tables_02.png)
 
-You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the __ShowInsertTableDialog()__ method of the __RadRichTextBox__. Here is a snapshot of it.
+You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action, just call the __ShowInsertTableDialog()__ method of the __RadRichTextBox__. Here is a snapshot of it. 
         
 
 >The __RadRichTextBoxUI__ also uses this dialog.
@@ -326,19 +326,19 @@ A table could be deleted or modified via the Table Tools’ contextual tab __Lay
 
 ### Formatting a Table
 
-You can enable the user to modify a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs – __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. To learn more about how to use the __RadRichTextBoxRibbonUI__ read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+You can enable the user to modify a table via the built-in UI of the __RadRichTextBox__. This is done by using the __RadRichTextBoxRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs – __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. To learn more about how to use the __RadRichTextBoxRibbonUI__, read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
 ![Rad Rich Text Box Features Layout Elements Tables 05](images/RadRichTextBox_Features_LayoutElements_Tables_05.png)
 
-The __Design__ contextual tab allows you to use a predefined set of formatting options called Table styles. The __TableStylesGallery__ offers a way to easily create, delete, modify and apply table styles in a document. To learn more about how to use the TableStylesGallery read [this topic]({%slug radrichtextbox-ui-for-applying-formatting-table-styles-gallery%}).
+The __Design__ contextual tab allows you to use a predefined set of formatting options called Table styles. The __TableStylesGallery__ offers a way to easily create, delete, modify and apply table styles in a document. To learn more about how to use the TableStylesGallery, read [this topic]({%slug radrichtextbox-ui-for-applying-formatting-table-styles-gallery%}).
         
 
 ![Rad Rich Text Box Features Layout Elements Tables 07](images/RadRichTextBox_Features_LayoutElements_Tables_07.png)
 
-Additionally, the built-in context menu of the __RadRichTextBox__ gives the user the possibility to open the __Table Properties__ and __Table Borders__ dialogs.
+Additionally, the built-in context menu of the __RadRichTextBox__ allows the user the option to open the __Table Properties__ and __Table Borders__ dialogs.
         
-
+<<Comment: Please double-check your figures. You have image 7 before image 6.>>
 ![Rad Rich Text Box Features Layout Elements Tables 06](images/RadRichTextBox_Features_LayoutElements_Tables_06.png)
 
 >tipTo wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextBox__ or the __ShowTablePropertiesCommand__.
