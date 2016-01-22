@@ -152,7 +152,7 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 
 {{region radcombobox-howto-enable-disable-radcombobox-items_5}}
 	<UserControl.Resources>
-	    <Style x:Key="ItemContainerStyle" TargetType="{x:Type telerik:RadComboBoxItem}">
+	    <Style x:Key="ItemContainerStyle" TargetType="{x:Type telerik:RadComboBoxItem}" BasedOn="{StaticResource RadComboBoxItemStyle}">
 	        <Setter Property="IsEnabled" Value="{Binding IsEnabled}"/>
 	    </Style>
 	</UserControl.Resources>
